@@ -1,0 +1,35 @@
+span {
+  color:blue;
+  font-size:16pt;
+}
+
+#customFont {
+  font-family:courier;
+  font-size:16pt;
+}
+
+.redThings {
+  color:red;
+}
+
+ul, ol {
+  background-color: gray;
+  color: white;
+  font-weight: bold
+}
+
+p:hover {
+  color:red;
+}
+
+p:link {
+  color:blue;
+}
+
+p:visited {
+  color:green;
+}
+
+p:focus {
+  color:purple;
+}
