@@ -1,0 +1,44 @@
+body {
+    margin: 10px;
+    padding: 20px;
+    font-family: 'Garamond';
+    background-color: #36454F;
+}
+
+h2 {
+    color: #f2f2f2;
+    font-size: 24pt;
+}
+
+.img {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.imgContainer {
+    border: 1px solid black;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+.button {
+    margin-top: 10px;
+    margin-left: 31%;
+    margin-right: auto;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    color:black;
+}
+
+.button:hover {
+    background-color: #EDEADE;
+}
