@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+	<title>Jigsaw Puzzle</title>
+	<meta charset = "UTF-8">
+	<meta name = "description" content = "A simple jigsaw puzzle with timer">
+	<meta name = "author" content = "Primo Marquez">
+	<link rel = "stylesheet" href = "hw10.css">
+  	<script src = "HW10.js"></script>
+</head>
+
+<body onload = "startTimer(), generateRandomPuzzle()">
+	<h2>Jigsaw Puzzle</h2>
+
+	<div class = "timerContainer">
+		<p>Time: <span id = "timer">00</span> </p>
+		<button onclick="stopTimer()">Done</button>
+	</div>
+
+	<div>
+		<img id = "grid" src = "puzzle1/puzzleback.gif">
+		<br>
+	</div>
+
+	<div class = "imagesContainer">
+		<div class = "puzzle1" id = "puzzle1Container">
+			<br>
+			<img id = "puzzle1Piece1" src = "puzzle1/img1-1.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle1Piece2" src = "puzzle1/img1-2.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle1Piece3" src = "puzzle1/img1-3.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle1Piece4" src = "puzzle1/img1-4.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle1Piece5" src = "puzzle1/img1-5.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle1Piece6" src = "puzzle1/img1-6.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle1Piece7" src = "puzzle1/img1-7.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle1Piece8" src = "puzzle1/img1-8.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle1Piece9" src = "puzzle1/img1-9.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle1Piece10" src = "puzzle1/img1-10.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle1Piece11" src = "puzzle1/img1-11.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle1Piece12" src = "puzzle1/img1-12.jpg" onmousedown = "grabber(event)">
+		</div>
+
+		<div class = "puzzle2" id = "puzzle2Container">
+			<br>
+			<img id = "puzzle2Piece1" src = "puzzle2/img2-1.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle2Piece2" src = "puzzle2/img2-2.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle2Piece3" src = "puzzle2/img2-3.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle2Piece4" src = "puzzle2/img2-4.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle2Piece5" src = "puzzle2/img2-5.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle2Piece6" src = "puzzle2/img2-6.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle2Piece7" src = "puzzle2/img2-7.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle2Piece8" src = "puzzle2/img2-8.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle2Piece9" src = "puzzle2/img2-9.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle2Piece10" src = "puzzle2/img2-10.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle2Piece11" src = "puzzle2/img2-11.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle2Piece12" src = "puzzle2/img2-12.jpg" onmousedown = "grabber(event)">
+		</div>
+
+		<div class = "puzzle3" id = "puzzle3Container">
+			<br>
+			<img id = "puzzle3Piece1" src = "puzzle3/img3-1.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle3Piece2" src = "puzzle3/img3-2.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle3Piece3" src = "puzzle3/img3-3.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle3Piece4" src = "puzzle3/img3-4.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle3Piece5" src = "puzzle3/img3-5.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle3Piece6" src = "puzzle3/img3-6.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle3Piece7" src = "puzzle3/img3-7.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle3Piece8" src = "puzzle3/img3-8.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle3Piece9" src = "puzzle3/img3-9.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle3Piece10" src = "puzzle3/img3-10.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle3Piece11" src = "puzzle3/img3-11.jpg" onmousedown = "grabber(event)">
+			<img id = "puzzle3Piece12" src = "puzzle3/img3-12.jpg" onmousedown = "grabber(event)">
+		</div>
+	</div>
+
+</body>
+</html>
