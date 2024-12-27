@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+  <title>Contact Us</title>
+  <meta charset = "UTF-8">
+  <meta name = "description" content = "Contact interest form">
+  <meta name = "author" content = "Primo Marquez">
+  <link rel = "stylesheet" href = "contact.css">
+</head>
+
+<body>
+
+<body>
+
+  <form method = "POST" action = "http://www.cknuckles.com/cgi/echo.cgi">
+
+    <table>
+
+<!-- Basic introduction to feedback form + form method -->
+
+      <caption style = "text-align:center"> <h4> Thank you for showing interest in our events! </h4> </caption>
+
+<!-- Inputs for name, email, and street address -->  
+
+      <tr>
+        <td style = "width:13%"> Name: </td>
+        <td> <label> <input name = "name" type = "text" size = "30"> </label> </td>
+      </tr>
+  
+      <tr>
+        <td style = "width:12%"> Phone Address: </td>
+        <td> <label> <input name = "address" type = "text" size = "30"> </label> </td>
+      </tr>
+
+      <tr>
+        <td style = "width:12%"> E-mail Address: </td> 
+        <td> <label> <input name = "email" type = "text" size = "30"> </label> </td>
+      </tr>
+
+
+<!-- Asking about activities of interest -->
+
+      <tr>
+        <td colspan = "2"> <p> <b> What activities would you like to join us for? </b> </p> </td>
+      </tr>
+
+      <tr>
+        <td> <label> Bookclub meetings <input name = "attraction[]" type = "checkbox" value = "bookclub" > </label> </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td> <label> Poetry readings <input name = "attraction[]" type = "checkbox" value = "poetry" > </label> </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td> <label> Children's story readings <input name = "attraction[]" type = "checkbox" value = "children" > </label> </td>
+        <td></td>
+      </tr>
+
+<!-- Asking for any additional comments -->
+
+      <tr>
+        <td colspan = "2">
+          <p> 
+            <label> <b> Additional Comments: </b> <br> <br>
+              <textarea name = "comments" rows = "4" cols = "36"></textarea>
+            </label>
+          </p>
+        </td>
+      </tr>
+
+<!-- Submit and reset buttons -->
+
+      <tr>
+        <td>
+          <p>
+            <input type = "submit" value = "Enter">
+            <input type = "reset" value = "Reset">
+          </p>
+        </td> 
+        <td></td>
+      </tr>
+
+    </table>
+
+  </form>
+
+  <footer>
+    <a href = "bookstore.html"> Back to Home </a>
+  </footer>
+
+</body>
+
+</html>
