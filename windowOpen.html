@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+  <title>Demos of window popup</title>
+  <meta charset = "UTF-8">
+  <meta name = "description" content = "Open a new window">
+  <meta name = "author" content = "Primo Marquez">
+</head>
+
+<body>
+
+<h2> Open a window of specified size </h2>
+
+<script type = "text/javascript">
+  var okPressed = window.confirm("Would you like to open a new window?")
+  if (okPressed) {
+    userWidth = prompt("Enter the width in pixels:")
+    userHeight = prompt("Enter the height in pixels:")
+    var myWindow = window.open("", "", "width=" + userWidth + ", height = " + userHeight)
+    myWindow.document.writeln("<p>Bazinga!</p>")
+  }
+
+</script>
+
+</body>
+</html>
