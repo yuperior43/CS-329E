@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+  <title>User Registration</title>
+  <meta charset = "UTF-8">
+  <meta name = "description" content = "Use AJAX to determine if a user exists in a database">
+  <meta name = "author" content = "Primo Marquez">
+  <link rel = "stylesheet" href = "hw15.css">
+</head>
+
+<body>
+
+<script language = "javascript">
+    function ajaxFunction() {
+        username = document.getElementById("user").value
+        password = document.getElementById("password").value
+
+        if (username == '' || password == '') {
+            alert("Please enter username and password.")
+            return
+        }
+
+        ajaxRequest = new XMLHttpRequest()
+        ajaxRequest.onreadystatechange = function() {
+            if (ajaxRequest.readyState == 4) {
+                ajaxDisplay = document.getElementById("ajaxDiv")
+                ajaxDisplay.innerHTML = ajaxRequest.responseText
+                document.getElementById("user").value = ""
+                document.getElementById("password").value = ""
+            }
+        }
+
+        password = encodeURIComponent(document.getElementById("password").value)
+        id = document.getElementById("user").value
+
+        queryString = "?password=" + password + "&user=" + id
+        
+        ajaxRequest.open("GET", "ajax.php" + queryString, true)
+        ajaxRequest.send(null)
+    }
+</script>
+
+<div class = "container">
+    <h3>User Information:</h3>
+    <table>
+    <form method = "POST" name = "myForm" action = "ajax.php">
+        <tr>
+            <td>Username:</td>
+            <td><input id = "user" name = "user" type = "text" required></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input id = "password" name = "password" type = "password" required></td>
+        </tr>
+        <tr>
+            <td><input type = "button" value = "Login/Register" onclick = "ajaxFunction()"></td>
+            <td><input type = "reset" value = "Reset"</td>
+        </tr>
+    </form>
+    </table>
+
+    <div id = "ajaxDiv"></div>
+</div>
+
+</body>
+</html>
