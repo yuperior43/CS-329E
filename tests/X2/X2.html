@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+  <title>Tic-Tac-Toe</title>
+  <meta charset = "UTF-8">
+  <meta name = "description" content = "Simple Tic-Tac-Toe game">
+  <meta name = "author" content = "Primo Marquez">
+  <link rel = "stylesheet" href = "X2.css">
+  <script src="../../jquery-3.7.1.js"></script>
+</head>
+
+<script>
+    $(document).ready(function(){
+        turn = 0
+        xScore = 0
+        oScore = 0
+        buttons = $(".button")
+
+        $(buttons).click(function() {
+            if ($(this).text() == "") {
+                if (turn % 2 == 0 || turn == 0) {
+                    $(this).text("X")
+                }
+                if (turn % 2 != 0) {
+                    $(this).text("O")
+                }
+                turn++
+                isWin()
+            }
+        })
+
+        function isWin() {
+            winConditions = [[1, 2, 3], [4, 5, 6], [7, 8, 9],
+            [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]]
+
+            for (winCondition of winConditions) {
+                [a, b, c] = winCondition
+                buttonA = $("#button" + a).text()
+                buttonB = $("#button" + b).text()
+                buttonC = $("#button" + c).text()
+
+                if (buttonA != "" && buttonA == buttonB && buttonB == buttonC) {
+                    if (turn % 2 == 0) {
+                        setTimeout(function() {
+                            alert("O has won.")
+                            resetButtons()  
+                        }, 100);
+                    }
+                    else {
+                        setTimeout(function() {
+                            alert("X has won.")
+                            resetButtons()
+                        }, 100);
+                    }
+                    updateScoreboard(buttonA)
+                }
+            }
+        }
+
+        function resetButtons(){
+            for (button of buttons) {
+                empty = ""
+                $(button).text(empty)
+            }
+            turn = 0
+        }
+
+        function updateScoreboard(button){
+            if (button == "X") {
+                xScore++
+                $("#X").text(xScore)
+            }
+            else {
+                oScore++
+                $("#O").text(oScore)
+            }
+        }
+
+        $("#reset").click(function() {
+            for (button of buttons) {
+                empty = ""
+                $(button).text(empty)
+            }
+            turn = 0
+        })
+    })
+</script>
+
+<body>
+
+<h2>Tic-Tac-Toe</h2>
+
+<div id = "container">
+    <div id = "scoreboard">
+        <table>
+            <tr>
+                <td>"X" - <span id = "X">0</span></td>
+                <td>"O" - <span id = "O">0</span></td>
+            </tr>
+        </table>
+    </div>
+
+    <table border = "1">
+    <tr>
+        <td><button id = "button1" class = "button"></button></td>
+        <td><button id = "button2" class = "button"></button></td>
+        <td><button id = "button3" class = "button"></button></td>
+    </tr>
+    <tr>
+        <td><button id = "button4" class = "button"></button></td>
+        <td><button id = "button5" class = "button"></button></td>
+        <td><button id = "button6" class = "button"></button></td>
+    </tr>
+    <tr>
+        <td><button id = "button7" class = "button"></button></td>
+        <td><button id = "button8" class = "button"></button></td>
+        <td><button id = "button9" class = "button"></button></td>
+    </tr>
+
+    </table>
+
+    <button id = "reset">Replay</button>
+</div>
+
+</body>
+</html>
