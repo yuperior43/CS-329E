@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+  <title>ENTER TITLE HERE</title>
+  <meta charset = "UTF-8">
+  <meta name = "description" content = "ENTER DESCRIPTION HERE">
+  <meta name = "author" content = "Primo Marquez">
+</head>
+
+<body>
+
+<!-- BODY GOES HERE -->
+
+</body>
+</html>

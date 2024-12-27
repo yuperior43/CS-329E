@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <title>Viewport Units</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <style type = "text/css">
+        #first {
+            background: cornflowerblue;
+            width: 80vw;
+        }
+        #second {
+            background: lightgreen;
+            height: 20vh;
+        }
+        #third {
+            background: mistyrose;
+            width: 50vmin;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+        body {
+            background-color: green;
+        }
+        @media screen and (min-width:600px) {
+            body {
+                background-color: yellow;
+            }
+        }
+        @media screen and (min-width:800px) {
+            body {
+                background-color: red;
+            }
+        }
+    </style>
+
+    <body>
+        <nav>
+            <a href = "#">Home</a>
+            <a href = "#">About Me</a>
+            <a href = "#">Contact</a>
+        </nav>
+
+        <div id = "first">First</div>
+        <div id = "second">Second</div>
+        <div id = "third">Third</div>
+    </body>
+
+</html>
