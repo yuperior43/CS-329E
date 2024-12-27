@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+  <title>Form demo</title>
+  <meta charset = "UTF-8">
+  <meta name = "description" content = "Demo code for forms and widgets">
+  <meta name = "author" content = "Primo Marquez">
+</head>
+
+<body>
+
+<form method = "POST" action = "SampleForm.php">
+
+   <p>
+      <label> userID: <input name = "name" type = "text" size = "30" required> </label>
+   </p>
+
+   <p>
+      <label> email: <input name = "email" type = "text" size = "30" > </label>
+   </p>
+
+   <p>
+      <b>Things you liked:</b><br>
+      <label> Location <input name = "attraction[]" type = "checkbox" value = "location" > </label>
+      <label> Price <input name = "attraction[]" type = "checkbox" value = "price" > </label>
+      <label> Service <input name = "attraction[]" type = "checkbox" value = "service" > </label>
+   </p>
+
+   <p>
+      <b>How did you find us?</b><br>
+      <label> Search Engine <input name = "connection" type = "radio" value = "search" > </label>
+      <label> Link from another site <input name = "connection" type = "radio" value = "link" > </label>
+      <label> Recommendation from friend <input name = "connection" type = "radio" value = "rec" > </label>
+      <label> Other <input name = "connection" type = "radio" value = "other" > </label>
+   </p>
+
+   <p>
+      <label> Additional Comments: <br>
+         <textarea name = "comments" rows = "4" cols = "36"> Enter your comments here: </textarea>
+      </label>
+   </p>
+
+   <p>
+      <label> Rate us:
+         <select name = "rating">
+            <option selected = "selected"> Excellent </option>
+	         <option> Very Good </option>
+	         <option> Good </option>
+	         <option> Fair </option>
+	         <option> Poor </option>
+	      </select>
+      </label>
+   </p>
+
+   <p>
+      <input type = "submit" value = "Enter" >
+      <input type = "reset" value = "Clear" >
+   </p>
+
+</form>
+
+</body>
+
+</html>
