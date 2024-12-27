@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+  <title>Mortgage Calculator</title>
+  <meta charset = "UTF-8">
+  <meta name = "description" content = "Mortgage Calculator">
+  <meta name = "author" content = "Primo Marquez">
+  <script src = "hw6.js"></script>
+  <link rel = "stylesheet" href = "hw6.css">
+</head>
+
+<body>
+
+  <form onsubmit="return false">
+
+    <table>
+      <caption> <h4> Mortgage Calculator </h4> </caption>
+      <tr>
+        <td style = "width: 12%"> Principal amount: </td>
+        <td> <input id = "principal" type = "text" size = "30" onmouseover="messages(0)" onmouseout = "messages(4)"> </td>
+      </tr>
+  
+      <tr>
+        <td style = "width: 12%"> Yearly interest rate: </td>
+        <td> <input id = "interest" type = "text" size = "30" onmouseover="messages(1)" onmouseout = "messages(4)"> </td>
+      </tr>
+
+      <tr>
+        <td style = "width: 12%"> Loan term: </td> 
+        <td> <input id = "term" type = "text" size = "30" onmouseover="messages(2)" onmouseout = "messages(4)"> </td>
+      </tr>
+
+      <tr>
+        <td colspan = "2">
+            <label><br><br>
+                <textarea id = "adviceBox" rows = "3" cols = "50">This box provides advice on filling out the form on this page. Put the mouse cursor over any input field to get advice.</textarea>
+            </label>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan = "2">
+          <input type = "button" value = "Calculate" onclick="Calculate(principal, interest, term)">
+          <input type = "reset" value = "Reset" onclick = "Clear()">
+        </td> 
+      </tr>
+
+<!-- Payments for mortgage -->
+
+      <tr class = "results">
+        <td id = "monthly" style = "width: 12%" colspan = "2">Monthly payment |</td>
+      </tr>
+
+      <tr class = "results">
+        <td id = "total" style = "width: 12%" colspan = "2">Sum of all payments |</td>
+      </tr>
+
+      <tr class = "results">
+        <td id = "totalInterest" style = "width: 12%" colspan = "2">Total interest paid |</td>
+      </tr>
+
+    </table>
+
+  </form>
+
+</body>
+
+</html>
