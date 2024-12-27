@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+  <title>Random Stacked Galaxies</title>
+  <meta charset = "UTF-8">
+  <meta name = "description" content = "Showing pictures of galaxies randomly">
+  <meta name = "author" content = "Primo Marquez">
+  <script src = "hw7.js"></script>
+  <link rel = "stylesheet" href = "hw7.css">
+</head>
+
+<body onload = "changeImg()">
+    <h2 class = "h2">Galaxies</h2>
+
+    <div class = "image-container">
+        <img id = "cluster" class = "img1" src = "GalaxyCluster.jpg" alt = "Galaxy cluster image" style = "width:640px; height:480px;">
+        <img id = "interacting" class = "img2" src = "InteractingGalaxies.jpg" alt = "Interacting galaxies image" style = "width:640px; height:480px;">
+        <img id = "m51" class = "img3" src = "M51.jpg" alt = "M51 image" style = "width:640px; height:480px;">
+        <img id = "m104" class = "img4" src = "M104.jpg" alt = "M 104 image" style = "width:640px; height:480px;">
+        <img id = "ngc1300" class = "img5" src = "NGC1300.jpg" alt = "NGC 1300 image" style = "width:640px; height:480px;">
+        <img id = "ngc6217" class = "img6" src = "NGC6217.jpg" alt = "NGC 6217 image" style = "width:640px; height:480px;">
+    </div>
+
+    <p id = "text" class = "caption"></p>
+
+    <p class = "btn">
+        <input type = "button" value = "Change Image" onclick = "changeImg()">
+    </p>
+
+</body>
+</html>

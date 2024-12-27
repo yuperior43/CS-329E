@@ -1,0 +1,50 @@
+.h2 {
+    position: absolute; 
+    left:350px;
+    color: #333;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6 {
+    position: absolute; 
+    left: 30px; 
+    top: 60px; 
+    z-index: 0;
+}
+
+.btn input {
+    position: absolute; 
+    top: 700px; 
+    left: 350px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn input:hover {
+    background-color: #3367d6;
+}
+
+.caption {
+    position: absolute; 
+    top: 605px; 
+    left: 380px;
+    color: #555;
+}
+
+.image-container {
+    position: absolute;
+    top: 75px;
+    left: 350px;
+    width: 700px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
