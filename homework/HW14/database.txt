@@ -1,0 +1,15 @@
+create TABLE students (
+    id    INT,
+    last  VARCHAR(20),
+    first VARCHAR(20),
+    major VARCHAR(20),
+    gpa   FLOAT,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO students VALUES
+    (3512, "Garcia", "Jose", "English", 3.29),
+    (7617, "Zhang", "Amy", "Chemistry", 2.87),
+    (5329, "Gupta", "Avi", "Economics", 3.08),
+    (4926, "Schwarz", "Ptolemy", "Astronomy, 2.59),
+    (1592, "Garcia", "Amy", "History", 3.43),;
