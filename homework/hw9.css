@@ -1,0 +1,45 @@
+body {
+    border: 10px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    float: left;
+    margin-right: 5px;
+  }
+
+textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+input[type="submit"], input[type="reset"] {
+    font-size: 12pt;
+}
+
+h2 {
+    color: #333;
+}
+
+h3 {
+    color: #666;
+}
+

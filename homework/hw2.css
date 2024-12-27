@@ -1,0 +1,59 @@
+body{
+  border:3px;
+  padding:20px;
+  margin:auto;
+  background-color:#131515;
+}
+
+a {
+  color:#9ec2e6;
+}
+
+a:hover {
+  color:#ff8085;
+}
+
+a:visited {
+  color:mediumpurple
+}
+
+a:active {
+  color:#9ec2e6;
+}
+
+.fontHeaders {
+  font-family: Garamond;
+  font-size: 14pt;
+  color: #F8F8FF;
+}
+
+.customFont {
+  font-family: Garamond;
+  font-size: 12pt;
+  color: #DCDCDC;
+}
+
+.listFont {
+  font-family: Garamond;
+  font-size: 12pt;
+  color: #D3D3D3;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid white;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Garamond;
+  color: #F8F8FF;
+}
+
+.imgCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

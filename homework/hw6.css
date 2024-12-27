@@ -1,0 +1,62 @@
+  body {
+    font-family: 'Times', sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  caption {
+    text-align: left;
+    font-size: 16pt;
+  }
+  
+  td {
+    padding: 12px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  #adviceBox {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Times', sans-serif;
+    font-size: large;
+  }
+
+  input[type="button"], input[type="reset"] {
+    font-family: 'Arial';
+    background-color: crimson;
+    color: white;
+  }
+
+  input[type="button"]:hover {
+    background-color: indianred;
+  }
+  
+  input[type="reset"]:hover {
+    background-color: indianred;
+  }
+  
+  .results {
+    font-weight: bold;
+  }

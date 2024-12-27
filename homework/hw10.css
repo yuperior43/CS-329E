@@ -1,0 +1,57 @@
+body {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 10px solid white;
+    border-radius: 5px;
+    min-height: 95vh;
+    padding-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20pt;
+}
+
+.timerContainer {
+    text-align: center;
+}
+
+#grid {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.imagesContainer {
+    background-color: white;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    max-width: 675px;
+}
+
+.puzzle1,
+.puzzle2,
+.puzzle3 {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 750px; 
+}
+
+.puzzle1 img,
+.puzzle2 img,
+.puzzle3 img {
+  margin: 5px;
+  display: inline-block;
+}
+
+.puzzle1 img:hover,
+.puzzle2 img:hover,
+.puzzle3 img:hover {
+  cursor: pointer;
+}
