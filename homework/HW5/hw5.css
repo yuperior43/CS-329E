@@ -1,0 +1,104 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#container {
+    width: 90%;
+    margin: 10px auto;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid gray;
+    line-height: 130%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#top {
+    padding: 1em;
+    background-color: darkblue;
+    border-bottom: 1px solid gray;
+    color:floralwhite;
+}
+
+#top-nav ul, li{
+    display: inline;
+    padding-left: 3.6em;
+    font-weight: bold;
+    padding-bottom: 2px;
+    background-color: lightgray;
+}
+
+#top h1 {
+    padding: 0;
+    margin: 0;
+}
+
+#leftnav {
+    float: left;
+    width: 20%;
+    margin: auto;
+    padding: 1em;
+}
+
+#rightnav {
+    float: right;
+    width: 20%;
+    margin: 0;
+    padding: 1em;
+}
+
+#content {
+    border-left: 1px solid gray;
+    margin-left: 25%;
+    margin-right: 35%;
+    width: 50%;
+    border-right: 1px solid gray;
+    padding: 1em;
+}
+
+#footer {
+    clear: both;
+    margin: 0;
+    padding: .5em;
+    color: #333;
+    background-color: #ddd;
+    border-top: 1px solid gray;
+}
+
+#leftnav p, #rightnav p { 
+    margin: 0 0 1em 0; 
+}
+
+#content h2 { 
+    margin: 0 0 .5em 0; 
+}
+
+#leftnav h2 { 
+    margin: 0 0 .5em 0; 
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+#avery, #kirby, #cakeMix {
+    width: 100px;
+    min-width: auto;
+}
+
+#bulko, #cowboys, #spring {
+    max-width: 50%;
+    min-width: auto;
+}
+
+.floatRight {
+    float:right;
+    margin: 0 0 5px 5px;
+    padding: 5px;
+    border:1px solid #333;
+}
