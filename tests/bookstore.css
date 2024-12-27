@@ -1,0 +1,40 @@
+body { 
+  font-family: Garamond;
+  border: 3px;
+  padding: 20px;
+  margin: auto;
+  background-color: #F8F8FF;
+}
+
+h1, h2, h3 {
+  text-align:center;
+}
+
+.article {
+  float:left;
+  width: 30%;
+  border: 3px solid white;
+  padding: 20px;
+  margin: auto;
+  background-color: #FAEBD7;
+  height: 300px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+#footer {
+  text-align:center;
+  font-size: 14pt;
+}
+
+img {
+  border: 1px;
+  padding: 2px;
+  margin: auto;
+}
+  
