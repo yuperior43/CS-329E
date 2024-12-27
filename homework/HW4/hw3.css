@@ -1,0 +1,35 @@
+ table {
+  border: 3px solid black;
+  padding: 10px;
+  margin: auto;
+  background-color: #f8f8ff;
+}
+
+body {
+  border: 3px;
+  padding: 20px;
+  margin: auto;
+  background-color: #f0f6fc;
+}
+
+td, select {
+  font-family: Garamond;
+  font-size: 12pt;
+}
+
+h2 {
+  font-family: Garamond;
+  font-size: 16pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+.submit, .reset {
+  font-family: Garamond;
+  font-size: 14pt;
+}
