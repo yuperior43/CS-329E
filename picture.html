@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+  <title>Picture demo</title>
+  <meta charset = "UTF-8">
+  <meta name = "description" content = "Changing picture size">
+  <meta name = "author" content = "Primo Marquez">
+</head>
+
+<body>
+
+<script type = "text/javascript">
+
+function smaller(x) {
+  x.style.height = "136px"
+  x.style.width = "205px"
+}
+
+function normal(x) {
+  x.style.height = "273px"
+  x.style.width = "410px"
+}
+
+</script>
+
+<img src = "whiteWhale.jpg" alt = "whale"
+   onmouseover = "smaller(this)" onmouseout="normal(this)">
+
+<p> The image will change size when you roll the mouse in and out. </p>
+
+</body>
+</html>
