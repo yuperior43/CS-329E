@@ -1,0 +1,25 @@
+article {
+  height:500px;
+  width:33.33%;
+  float:left;
+}
+
+#column1 {
+  background-color:#a1edcc;
+}
+
+#column2 {
+  background-color:#a0e9ed;
+}
+
+#column3 {
+  background-color:#f497f1;
+}
+
+h2 {
+  text-align:center;
+  background-color:yellow;
+  border:3px solid black;
+  padding:10px;
+  margin:20px;
+}
